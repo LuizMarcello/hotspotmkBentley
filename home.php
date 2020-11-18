@@ -7,9 +7,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo text-center">
-                            <h1>Bentley Brasil</h1>
-                            <span style="color:#333333;font-size:20px;font-weight:bold">Controle de usuários no hotspot Wi Fi</span>
-							<span style="color:#888888;font-size:20px;font-weight:bold">Bentley Brasil - Luiz Marcello</span>
+                            <h1>Easy HotSpot</h1>
+                            <span style="color:#333333;font-size:20px;font-weight:bold">Gerenciador de usuários de hotspot wiFi</span>
+							<span style="color:#888888;font-size:20px;font-weight:bold">Por Bentley brasil, Ph:+91 9020 150 150</span>
                         </div>
                     </div>
                 </div>
@@ -25,13 +25,13 @@
                         <div class="menu-item blue">
                             <a href="#single-user" data-toggle="modal">
                                 <i class="fa fa-child"></i>
-                                <p>Adicione um usuário</p>
+                                <p>Add Single User</p>
                             </a>
                         </div>
 						<div class="menu-item red">
                             <a href="#multi-user" data-toggle="modal">
                                 <i class="fa fa-users"></i>
-                                <p>Adicione vários usuários</p>
+                                <p>Add Multiple Users</p>
                             </a>
                         </div>
                     </div>
@@ -39,13 +39,13 @@
                         <div class="menu-item skyblue">
                             <a href="#active-users" data-toggle="modal">
                                 <i class="fa fa-signal"></i>
-                                <p>lista usuários ativos</p>
+                                <p>List Active Users</p>
                             </a>
                         </div>
                         <div class="menu-item purple">
                             <a href="#remove-selected" data-toggle="modal">
                                 <i class="fa fa-ban"></i>
-                                <p>Remova usuarios selecionados</p>
+                                <p>Remove Selected Users</p>
                             </a>
                         </div>
 
@@ -54,13 +54,13 @@
                         <div class="menu-item coral">
                             <a href="#server-log" data-toggle="modal">
                                 <i class="fa fa-paw"></i>
-                                <p>Log do servidor</p>
+                                <p>Server Log</p>
                             </a>
                         </div>
                         <div class="menu-item navy">
                             <a href="voucher.php">
                                 <i class="fa fa-bars"></i>
-                                <p>Impressão de vouchers</p>
+                                <p>Voucher Printing</p>
                             </a>
                         </div>
 
@@ -69,13 +69,13 @@
                         <div class="menu-item fuchsia">
                             <a href="#remove-uninitiated" data-toggle="modal">
                                 <i class="fa fa-gears"></i>
-                                <p>Remove não inicializados</p>
+                                <p>Remove Un-Initiated</p>
                             </a>
                         </div>
                         <div class="menu-item gold">
                             <a href="#profiler" data-toggle="modal">
                                 <i class="fa fa-user"></i>
-                                <p>Perfis dos usuários HotSpot</p>
+                                <p>HotSpot User Profiles</p>
                             </a>
                         </div>
                     </div>
@@ -83,13 +83,13 @@
                         <div class="menu-item olive">
 							<a href="#remove-expired" data-toggle="modal">
                                 <i class="fa fa-bug"></i>
-                                <p>Remove todos os usuários expirados</p>
+                                <p>Remove All Expired</p>
                             </a>
                         </div>					
                         <div class="menu-item purple">
                             <a href="#system-user" data-toggle="modal">
                                 <i class="fa fa-user-md"></i>
-                                <p>Usuários do sistema</p>
+                                <p>System Users</p>
                             </a>
                         </div>
 					</div>	
@@ -97,7 +97,7 @@
                         <div class="menu-item green">
                             <a href="#list-users" data-toggle="modal">
                                 <i class="fa fa-ambulance"></i>
-                                <p>Lista de usuários inativos</p>
+                                <p>List Inactive Users</p>
                             </a>
                         </div>						
                         <div class="menu-item blue">
