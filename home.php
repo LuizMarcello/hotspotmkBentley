@@ -7,9 +7,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo text-center">
-                            <h1>Easy HotSpot</h1>
+                            <h1>HotSpot Mikrotik</h1>
                             <span style="color:#333333;font-size:20px;font-weight:bold">Gerenciador de usuários de hotspot wiFi</span>
-							<span style="color:#888888;font-size:20px;font-weight:bold">Por Bentley brasil, Ph:+91 9020 150 150</span>
+							<span style="color:#888888;font-size:20px;font-weight:bold">Por Bentley Brasil</span>
                         </div>
                     </div>
                 </div>
@@ -24,28 +24,32 @@
                     <div class="col-md-2">
                         <div class="menu-item blue">
                             <a href="#single-user" data-toggle="modal">
-                                <i class="fa fa-child"></i>
-                                <p>Add Single User</p>
+                                <!-- <i class="fa fa-child"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>Adicionar simples usuário</p> -->
                             </a>
                         </div>
 						<div class="menu-item red">
                             <a href="#multi-user" data-toggle="modal">
-                                <i class="fa fa-users"></i>
-                                <p>Add Multiple Users</p>
+                                <!-- <i class="fa fa-users"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>Adicionar multiplos usuários</p> -->
                             </a>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="menu-item skyblue">
                             <a href="#active-users" data-toggle="modal">
-                                <i class="fa fa-signal"></i>
-                                <p>List Active Users</p>
+                                <!-- <i class="fa fa-signal"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>lista usuários ativos</p> -->
                             </a>
                         </div>
                         <div class="menu-item purple">
                             <a href="#remove-selected" data-toggle="modal">
-                                <i class="fa fa-ban"></i>
-                                <p>Remove Selected Users</p>
+                                <!-- <i class="fa fa-ban"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>Remove usuários selecionados</p> -->
                             </a>
                         </div>
 
@@ -53,14 +57,16 @@
                     <div class="col-md-2">
                         <div class="menu-item coral">
                             <a href="#server-log" data-toggle="modal">
-                                <i class="fa fa-paw"></i>
-                                <p>Server Log</p>
+                                <!-- <i class="fa fa-paw"></i> -->
+                                <p>adicionar função</p>
+                                <!-- <p>Log do servidor</p> -->
                             </a>
                         </div>
                         <div class="menu-item navy">
                             <a href="voucher.php">
-                                <i class="fa fa-bars"></i>
-                                <p>Voucher Printing</p>
+                                <!-- <i class="fa fa-bars"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>Imprimir Voucher</p> -->
                             </a>
                         </div>
 
@@ -68,42 +74,48 @@
 					<div class="col-md-2">
                         <div class="menu-item fuchsia">
                             <a href="#remove-uninitiated" data-toggle="modal">
-                                <i class="fa fa-gears"></i>
-                                <p>Remove Un-Initiated</p>
+                                <!-- <i class="fa fa-gears"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>Remover não-inicializados</p> -->
                             </a>
                         </div>
                         <div class="menu-item gold">
                             <a href="#profiler" data-toggle="modal">
-                                <i class="fa fa-user"></i>
-                                <p>HotSpot User Profiles</p>
+                                <!-- <i class="fa fa-user"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>Perfis dos usuários do hotspot</p> -->
                             </a>
                         </div>
                     </div>
 					<div class="col-md-2">
                         <div class="menu-item olive">
 							<a href="#remove-expired" data-toggle="modal">
-                                <i class="fa fa-bug"></i>
-                                <p>Remove All Expired</p>
+                                <!-- <i class="fa fa-bug"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>Remove todos expirados</p> -->
                             </a>
                         </div>					
                         <div class="menu-item purple">
                             <a href="#system-user" data-toggle="modal">
-                                <i class="fa fa-user-md"></i>
-                                <p>System Users</p>
+                                <!-- <i class="fa fa-user-md"></i> -->
+                                <p>adicionar função</p>
+                                <!-- <p>Usuários do sistema</p> -->
                             </a>
                         </div>
 					</div>	
 					<div class="col-md-2">						
                         <div class="menu-item green">
                             <a href="#list-users" data-toggle="modal">
-                                <i class="fa fa-ambulance"></i>
-                                <p>List Inactive Users</p>
+                                <!-- <i class="fa fa-ambulance"></i> -->
+                                <p>adicionar função</p>
+                                <!-- <p>Lista usuários inativos</p> -->
                             </a>
                         </div>						
                         <div class="menu-item blue">
 							<a href="index.php" >
-                                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
-                                <p>Refresh</p>
+                                <!-- <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> -->
+                                <p>Adicionar função</p>
+                                <!-- <p>Refresh</p> -->
                             </a>
                         </div>
                     </div>
@@ -129,18 +141,18 @@
 						<div class="row">
 							<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 								<div class="panel panel-primary">
-									<div class="panel-heading"><h3 class="text-center">Single User Creation</h3></div>
+									<div class="panel-heading"><h3 class="text-center">Criar um usuário</h3></div>
 									<div class="panel-body">
 										<div class="form-horizontal">
 											<div class="form-group form-group-sm">
 												<div class="col-sm-4">
-													<label class="col-sm-6 control-label" >User Name</label>
+													<label class="col-sm-6 control-label" >nome do usuário</label>
 													<div class="col-sm-6">
 														<input type="text" placeholder="Required Username *" name="uname" id="uname" required >
 													</div>
 												</div>
 												<div class="col-sm-4">
-													<label class="col-sm-6 control-label" >Password</label>
+													<label class="col-sm-6 control-label" >Senha</label>
 													<div class="col-sm-6">
 														<input type="text" placeholder="required password *" name="psw" id="psw" required>
 													</div>
@@ -162,7 +174,7 @@
 											</div>	
 											<div class="form-group form-group-sm">
 												<div class="col-sm-4">						
-													<label class="col-sm-6 control-label" for="slimit_bytes">Maximum Usage Limit(GB), 0 for NO Limit</label>
+													<label class="col-sm-6 control-label" for="slimit_bytes">Limite de uso máximo(GB), 0 para sem limite</label>
 													<div class="col-sm-6">
 														<input type="number" title="Maximum usable data in GB" name="slimit_bytes" id="slimit_bytes" min="0" value="0" required >
 														<!--<select class="myCombo" id="slimit_bytes" name="slimit_bytes">
@@ -176,7 +188,7 @@
 													</div>
 												</div>
 												<div class="col-sm-4">						
-													<label class="col-sm-6 control-label" >Bandwidth (Mbps) Profile</label>
+													<label class="col-sm-6 control-label" >Largura de banda (Mbps) Perfil</label>
 													<div class="col-sm-6">
 														<?php
 														$util->setMenu('/ip hotspot user profile');
@@ -226,24 +238,24 @@
 						<div class="row">
 							<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 								<div class="panel panel-primary">
-									<div class="panel-heading"><h3 class="text-center">Create Multiple Users</h3></div>
+									<div class="panel-heading"><h3 class="text-center">Cria multiplos usuários</h3></div>
 									<div class="panel-body">
 										<div class="form-horizontal">
 											<div class="form-group form-group-sm">
 												<div class="col-sm-4">
-													<label class="col-sm-6 control-label" for="no_of_users">How many Users</label>
+													<label class="col-sm-6 control-label" for="no_of_users">Quantidade de usuários</label>
 													<div class="col-sm-6">
 														<input type="number" min="2" max="150" id="no_of_users" name="no_of_users" value="2" autofocus >
 													</div>
 												</div>
 												<div class="col-sm-4">
-													<label class="col-sm-6 control-label" for="user_prefix">User name Prefix</label>
+													<label class="col-sm-6 control-label" for="user_prefix">Prefixo do nome do usuário</label>
 													<div class="col-sm-6">
 														<input type="text" id="user_prefix" name="user_prefix">
 													</div>
 												</div>
 												<div class="col-sm-4">						
-													<label class="col-sm-6 control-label" for="pass_length">Password length</label>
+													<label class="col-sm-6 control-label" for="pass_length">Tamanho da senha</label>
 													<div class="col-sm-6">
 														<input type="number" min="4" max="10" id="pass_length" name="pass_length" value="5">
 													</div>
@@ -251,7 +263,7 @@
 											</div>	
 											<div class="form-group form-group-sm">
 												<div class="col-sm-4">
-													<label class="col-sm-6 control-label" for="limit_uptime">Uptime Limit(wdhms format)</label>
+													<label class="col-sm-6 control-label" for="limit_uptime">limite de Uptime (formato wdhms)</label>
 													<div class="col-sm-6">
 														<input type="text" placeholder="1d1h" title="eg.5h30m [w(Weeks) d(days) h(hours) m(minutes) s(seconds) format]" name="limit_uptime" id="limit_uptime" >
 														<!--<input type="number" placeholder="No of days" name="limit_uptime" id="limit_uptime" min="1" value="2" required >
@@ -266,7 +278,7 @@
 													</div>
 												</div>
 												<div class="col-sm-4">						
-													<label class="col-sm-6 control-label" for="profile">Bandwidth (Mbps) Profile</label>
+													<label class="col-sm-6 control-label" for="profile">largura de banda (Mbps) Perfil</label>
 													<div class="col-sm-6">
 														<?php
 														$util->setMenu('/ip hotspot user profile');
@@ -278,7 +290,7 @@
 													</div>
 												</div>
 												<div class="col-sm-4">						
-													<label class="col-sm-6 control-label">Username & Password</label>
+													<label class="col-sm-6 control-label">Nome de usuário & Senha</label>
 													<div class="col-sm-6">
 														<select class="myCombo" id="same_pass" name="same_pass">
 															<option value="1">Same</option>									
@@ -289,7 +301,7 @@
 											</div>	
 											<div class="form-group form-group-sm">
 												<div class="col-sm-4">
-												<label class="col-sm-6 control-label" for="limit_bytes">Maximum Usage Limit(GB), 0 for NO Limit</label>
+												<label class="col-sm-6 control-label" for="limit_bytes">Limite de uso máximo(GB), 0 para sem Limite</label>
 													<div class="col-sm-6">
 														<input type="number" placeholder="Maximum usable data in GB" name="limit_bytes" id="limit_bytes" min="0" value="0" required >
 													</div>
@@ -306,7 +318,7 @@
 													</div> -->
 												</div>
 												<div class="col-sm-4">						
-													<label class="col-sm-6 control-label" for="pass_type">Password Type</label>
+													<label class="col-sm-6 control-label" for="pass_type">Tipo de senha</label>
 													<div class="col-sm-6">
 														<select class="myCombo" id="pass_type" name="pass_type" value="sn" required>
 															<option value="sn">abcd1234</option>
@@ -365,13 +377,13 @@
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>User</th>
-									<th>Profile</th>
+									<th>Usuario</th>
+									<th>Perfil</th>
 									<th>Bytes In</th>
 									<th>Bytes Out</th>
-									<th>Total Permitted Usage</th>
-									<th>Time Used</th>
-									<th>Validity Limit</th>
+									<th>Total de uso permitido</th>
+									<th>Tempo utilizado</th>
+									<th>Limite da validade</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -405,7 +417,7 @@
 						</table>
                     </div>
 					<div class="col-sm-2 col-sm-offset-5">
-						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
+						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;Voltar</button>
 					</div>
                 </div>
             </div>
@@ -423,23 +435,23 @@
                 </div>
                 <div class="container">
 					<div class="col-sm-2 col-sm-offset-5">
-						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
+						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;Voltar</button>
 					</div>
                     <div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 						<?php $util->setMenu('/ip hotspot active'); ?>
 						<table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered" id="table-01">
 							<div class="alert alert-info">
-								<strong><i class="icon-user icon-large"></i><h3 class="text-center">List of Users Active at the moment</h3></strong>
+								<strong><i class="icon-user icon-large"></i><h3 class="text-center">Lista de usuários ativos no momento</h3></strong>
 							</div>
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>Server</th>
-									<th>Domain</th>
-									<th>User</th>
-									<th>IP Address</th>
-									<th>Uptime</th>
-									<th>Session Time left</th>
+									<th>Servidor</th>
+									<th>Dominio</th>
+									<th>Usuario</th>
+									<th>Endereço ip</th>
+									<th>Tempo de atividade</th>
+									<th>Tempo restante da sessão</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -479,7 +491,7 @@
                 </div>
                 <div class="container">
 					<div class="col-sm-2 col-sm-offset-5">
-						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
+						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;Voltar</button>
 					</div>
 					<form id="checkboxForm" class="form-horizontal">
 						<div class="form-group">
@@ -487,18 +499,18 @@
 								<?php $util->setMenu('/ip hotspot user'); ?>
 								<table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered" id="table-01">
 									<div class="alert alert-info">
-										<strong><i class="icon-user icon-large"></i><h3 class="text-center">List of users accounts</h3></strong>
+										<strong><i class="icon-user icon-large"></i><h3 class="text-center">Lista de contas de usuários</h3></strong>
 									</div>
 									<thead>
 										<tr>
 											<th>#</th>
-											<th>User</th>
-											<th>Profile</th>
+											<th>Usuario</th>
+											<th>Perfil</th>
 											<th>Bytes In</th>
 											<th>Bytes Out</th>
-											<th>Total Permitted Usage</th>
-											<th>Time Used</th>
-											<th>Validity Limit</th>
+											<th>Total de uso permitido</th>
+											<th>Tempo utilizado</th>
+											<th>Limite da validade</th>
 											<?php if($_SESSION['user_level'] <= 2) { //Administrator/Unit Head Only
 												echo '<th>Remove</th>';
 											} ?>
@@ -553,10 +565,10 @@
 								</div>
 								<div class="col-sm-2"> -->
 								<div class="col-sm-2 col-sm-offset-4">
-									<button name="removal" id="removal" data-dismiss="modal" onClick="removeSelected(this.form);" class="btn btn-success"><i class="icon-save icon-large"></i></a>&nbsp;Remove Selected</button>&nbsp;&nbsp;&nbsp;
+									<button name="removal" id="removal" data-dismiss="modal" onClick="removeSelected(this.form);" class="btn btn-success"><i class="icon-save icon-large"></i></a>&nbsp;Remove selecionado</button>&nbsp;&nbsp;&nbsp;
 								</div>	
 								<div class="col-sm-2">
-									<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
+									<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;Voltar</button>
 								</div>
 							</div>
 						</div>
@@ -574,7 +586,7 @@
                         <div class="rl">
                         </div>
                     </div>
-                </div>
+                </div>    
                 <div class="container">
 					<div class="col-sm-2 col-sm-offset-5">
 						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
@@ -582,17 +594,17 @@
                     <div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 						<table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered" id="table-01">
 							<div class="alert alert-info">
-								<strong><i class="icon-user icon-large"></i><h3 class="text-center">Validity expired users available in System</h3></strong>
+								<strong><i class="icon-user icon-large"></i><h3 class="text-center">Validade dos usuários expirados disponíveis no sistema</h3></strong>
 							</div>
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>Server</th>
-									<th>User</th>
-									<th>Profile</th>
-									<th>Limit Uptime</th>
-									<th>Uptime</th>
-									<th>Limit Bytes Total</th>
+									<th>Servidor</th>
+									<th>Usuário</th>
+									<th>Perfil</th>
+									<th>Limite do tempo de atividade</th>
+									<th>Tempo utilizado</th>
+									<th>Limite de Bytes Total</th>
 									<th>Bytes In</th>
 									<th>Bytes Out</th>
 								</tr>
@@ -659,19 +671,19 @@
                 <div class="container">
                     <div class="row">
 						<div class="col-sm-2 col-sm-offset-5">
-							<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
+							<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;Voltar</button>
 						</div>
 						<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 							<table cellpadding="0" cellspacing="0" border="0" class="table table-bordered" id="table-01">
 								<div class="alert alert-info">
-									<strong><i class="icon-user icon-large"></i><h3 class="text-center">Server Event Log - Last 1000 activities</h3></strong>
+									<strong><i class="icon-user icon-large"></i><h3 class="text-center">Servidor do log de eventos - Últimas 1000 atividades</h3></strong>
 								</div>
 								<thead>
 									<tr>
 										<th>#</th>
-										<th>Time</th>
-										<th>Topic</th>
-										<th>Description</th>
+										<th>Tempo</th>
+										<th>Tópico</th>
+										<th>Descrição</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -691,7 +703,7 @@
 							</table>
 						</div>
 						<div class="col-sm-2 col-sm-offset-5">
-							<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
+							<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;Voltar</button>
 						</div>						
 					</div>
 				<!--</div>-->
@@ -707,25 +719,25 @@
                     <div class="lr">
                         <div class="rl"></div>
                     </div>
-                </div>
+                </div>                                                                 
                 <div class="container">
                     <div class="no_print">
 						<div class="row">
 							<div class="col-sm-4 col-sm-offset-4">
-								<a href="#change-password" data-toggle="modal" class="btn btn-primary btn-lg center-element"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Change My Password</a>&nbsp;&nbsp;
+								<a href="#change-password" data-toggle="modal" class="btn btn-primary btn-lg center-element"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Alterar minha senha</a>&nbsp;&nbsp;
 							</div>
 							<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 								<table cellpadding="0" cellspacing="0" border="0" class="table table-bordered" id="table-01">
 									<div class="alert alert-info">
-										<strong><i class="icon-user icon-large"></i><h3 class="text-center">System Users managing Hotspot Activities</h3></strong>
+										<strong><i class="icon-user icon-large"></i><h3 class="text-center">Usuários do sistema gerenciando atividades do hotspot</h3></strong>
 									</div>
 									<thead>
 										<tr>
-											<th>Username</th>
-											<th>Password</th>                                 
-											<th>Firstname</th>                                 
-											<th>Lastname</th>
-											<th>Level</th>
+											<th>Nome do usuário</th>
+											<th>Senha</th>                                 
+											<th>Primeiro nome</th>                                 
+											<th>Ultimo nome</th>
+											<th>Nivel</th>
 											<?php if($_SESSION['user_level'] == 1) { //Administrator Only
 												echo '<th>Actions</th>';
 											} ?>	
@@ -767,7 +779,7 @@
 								</table>
 							</div>
 							<div class="col-sm-2 col-sm-offset-5">
-								<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
+								<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;Voltar</button>
 							</div>
 						</div>
 					</div>
@@ -783,25 +795,25 @@
                     <div class="lr">
                         <div class="rl">
                         </div>
-                    </div>
+                    </div>                                
                 </div>
                 <div class="container">
 					<div class="col-sm-2 col-sm-offset-5">
-						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;BACK</button>
+						<button data-dismiss="modal" class="btn btn-info center-element" ><i class="icon-save icon-large"></i>&nbsp;Voltar</button>
 					</div>
                     <div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 						<?php $util->setMenu('/ip hotspot user'); ?>
 						<table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered" id="table-01">
 							<div class="alert alert-info">
-								<strong><i class="icon-user icon-large"></i><h3 class="text-center">User accounts not yet initiated any activities, ie. accounts inactive at the moment</h3></strong>
+								<strong><i class="icon-user icon-large"></i><h3 class="text-center">Contas de usuários que ainda não iniciaram quaisquer atividades, ie. Contas inativas até o momento</h3></strong>
 							</div>
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>Server</th>
-									<th>User</th>
-									<th>Profile</th>
-									<th>Uptime Limit</th>
+									<th>Servidor</th>
+									<th>Usuário</th>
+									<th>Perfil</th>
+									<th>limite do tempo de atividade</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -826,7 +838,7 @@
 						<?php if($_SESSION['user_level'] <= 2) {
 							echo '<button name="uissuing" id="uissuing" onClick="ajaxUninitiated();" class="btn btn-success"><i class="icon-save icon-large"></i></a>&nbsp;Remove All</button>&nbsp;&nbsp;&nbsp;';
 						} ?>	
-						<button data-dismiss="modal" class="btn btn-info" ><i class="icon-save icon-large"></i></a>&nbsp;CANCEL</button>
+						<button data-dismiss="modal" class="btn btn-info" ><i class="icon-save icon-large"></i></a>&nbsp;CANCELA</button>
 					</div>
                 </div>
             </div>
@@ -840,7 +852,7 @@
                     <div class="lr">
                         <div class="rl"></div>
                     </div>
-                </div>
+                </div>                                                               
                 <div class="container">
                     <div class="no_print">
 						<div class="row">
@@ -851,7 +863,7 @@
 								<?php $util->setMenu('/ip hotspot user profile'); ?>								
 								<table cellpadding="0" cellspacing="0" border="0" class="table table-bordered" id="table-01">
 									<div class="alert alert-info">
-										<strong><i class="icon-user icon-large"></i><h3 class="text-center">HotSpot User Profiles Available</h3></strong>
+										<strong><i class="icon-user icon-large"></i><h3 class="text-center">Perfis disponiveis dos usuários do hotspot</h3></strong>
 									</div>
 									<thead>
 										<tr>
