@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include ('header.php');
+include ('header.php');                                      
 if ( !isset($_SESSION) ) session_start(); ?>
 <body>
 	<div class="container" style="margin-top:50px;">
@@ -9,43 +9,43 @@ if ( !isset($_SESSION) ) session_start(); ?>
 		<div class="row">
 			<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 				<div class="panel panel-primary">
-					<div class="panel-heading"><h3 class="text-center">HotSpot User Voucher Printing</h3></div>
+					<div class="panel-heading"><h3 class="text-center"></h3></div>
 					<div class="panel-body">
 						<form class="form-horizontal" method="post">
-							<div class="alert alert-info text-center"><strong>Printing of last set of vouchers</strong></div>
+							<div class="alert alert-info text-center"><strong>Impressão do comprovante do usuário hotspot</strong></div>
 							<div class="form-group">
 								<div class="col-xs-4">
 									<img src="images/shot1.png" width="240" height="100" class="center">
-									<button name="voucher1" id="voucher1" class="btn btn-success center-element"  tabindex="1" title="Single Account Per Row(Plain List)">Single Account Per Row(Plain List)</button></a>
+									<button name="voucher1" id="voucher1" class="btn btn-success center-element"  tabindex="1" title="Single Account Per Row(Plain List)">Conta única por linha (lista plana)</button></a>
 								</div>
 								<div class="col-xs-4">
 									<img src="images/shot2.png" width="240" height="100" class="center">
-									<button name="voucher2" id="voucher2" class="btn btn-primary center-element"  tabindex="2" title="2 Accounts per Row(Plain List)">2 Accounts per Row(Plain List)</button>
+									<button name="voucher2" id="voucher2" class="btn btn-primary center-element"  tabindex="2" title="2 Accounts per Row(Plain List)">2 contas por linha(lista plana)</button>
 								</div>
 								<div class="col-xs-4">
 									<img src="images/shot3.png" width="240" height="100" class="center">
-									<button name="voucher3" id="voucher3"  class="btn btn-info center-element" title="Only use with Accounts having same username and password" tabindex="3">3 Accounts per Row(Plain List)</button>
+									<button name="voucher3" id="voucher3"  class="btn btn-info center-element" title="Only use with Accounts having same username and password" tabindex="3">3 contas por linha(lista plana)</button>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-xs-4">
 									<img src="images/shot4.png" width="240" height="100" class="center">
-									<button name="voucher4" id="voucher4" class="btn btn-danger center-element" tabindex="4" title="2 Rows for Single Account(Plain List)">2 Rows for Single Account(Plain List)</button>
+									<button name="voucher4" id="voucher4" class="btn btn-danger center-element" tabindex="4" title="2 Rows for Single Account(Plain List)">2 linhas por conta única(lista plana)</button>
 								</div>
 								<div class="col-xs-4">
 									<img src="images/shot5.png" width="240" height="100" class="center">
-									<button name="voucher5" id="voucher5" class="btn btn-warning center-element" tabindex="5" title="Single Voucher/row - ID Card Format, Suitable for printing on envelope type sheets">Single Voucher/row - ID Card Format</button>
+									<button name="voucher5" id="voucher5" class="btn btn-warning center-element" tabindex="5" title="Single Voucher/row - ID Card Format, Suitable for printing on envelope type sheets">Unico Voucher/linha - ID Card Format</button>
 								</div>
 								<div class="col-xs-4">
 									<img src="images/shot6.png" width="240" height="100" class="center">
-									<button name="voucher6" id="voucher6" class="btn btn-primary center-element" tabindex="5" title="3 Vouchers/row - ID Card Format, Suitable for printing on A4/similar size Sheets">3 Vouchers/row - ID Card Format</button>
+									<button name="voucher6" id="voucher6" class="btn btn-primary center-element" tabindex="5" title="3 Vouchers/row - ID Card Format, Suitable for printing on A4/similar size Sheets">3 Vouchers/linha - ID Card Format</button>
 								</div>
 							</div>	
 							<div class="form-group">
 								<div class="col-xs-4 col-xs-offset-4">
 									<button name="submit" type="submit" class="btn btn-success" tabindex="6"><i class="icon-save icon-large"></i>Reset</button>
-									<button name="submit" type="submit" class="btn btn-primary" tabindex="7"><i class="icon-save icon-large"></i>Refresh Page</button>
-									<a href="index.php" class="btn btn-danger" tabindex="8"><i class="icon-arrow-left icon-large"></i>Main Menu</a>
+									<button name="submit" type="submit" class="btn btn-primary" tabindex="7"><i class="icon-save icon-large"></i>Refresh Página</button>
+									<a href="index.php" class="btn btn-danger" tabindex="8"><i class="icon-arrow-left icon-large"></i>Menu principal</a>
 								</div>	
 							</div>							
 						</form>
@@ -70,22 +70,22 @@ else
 	?>
 	<div class="child-modal">
 	<div class="row">
-		<div class="col-sm-2 col-sm-offset-6"><button onclick="window.print();" class="btn btn-primary"><i class="icon-save icon-large"></i></a>&nbsp;PRINT</button></div>
+		<div class="col-sm-2 col-sm-offset-6"><button onclick="window.print();" class="btn btn-primary"><i class="icon-save icon-large"></i></a>&nbsp;Imprimir</button></div>
 		<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 			<table cellpadding="0" cellspacing="0" border="1" class="table table-bordered" id="example">
-				<caption class="text-center">HOTSPOT USER LIST - <?php echo date('d-m-Y'); ?></caption>
+				<caption class="text-center">LISTA DE USUÁRIOS DO HOTSPOT - <?php echo date('d-m-Y'); ?></caption>
 				<div class="alert alert-info">
-					<h1 class="text-center"><strong>HotSpot User Voucher</strong></h1>
+					<h1 class="text-center"><strong>Voucher do usuário do hotspot</strong></h1>
 				</div>
 				<thead>
 					<tr>
 						<th>#</th>
 						<th></th>
-						<th>Username</th>
-						<th>Password</th>
-						<th>Limit Uptime</th>
+						<th>Nome do usuário</th>
+						<th>Senha</th>
+						<th>Limite do tempo de atividade</th>
 						<th>Limit Bytes</th>
-						<th>Bandwidth Profile</th>
+						<th>largura de banda do perfil</th>
 						
 					</tr>
 				</thead>
@@ -111,9 +111,9 @@ else
 			</table>
 		</div>
 		<div class="col-sm-3 col-sm-offset-5">
-			<button onclick="window.print();" class="btn btn-danger"><i class="icon-save icon-large"></i>PRINT</button>&nbsp;&nbsp;&nbsp;
+			<button onclick="window.print();" class="btn btn-danger"><i class="icon-save icon-large"></i>IMPRESSÃO</button>&nbsp;&nbsp;&nbsp;
 			<button name="submit" type="submit" class="btn btn-success" tabindex="6"><i class="icon-save icon-large"></i>Reset</button>&nbsp;&nbsp;&nbsp;
-			<a href="index.php" class="btn btn-info" tabindex="7"><i class="icon-arrow-left icon-large"></i>Main Menu</a>
+			<a href="index.php" class="btn btn-info" tabindex="7"><i class="icon-arrow-left icon-large"></i>MENU PRINCIPAL</a>
 		</div>						
 	</div>
 	</div>
@@ -139,21 +139,21 @@ if (isset($_POST['voucher2'])) {
 		<div class="col-sm-2 col-sm-offset-6"><button onclick="window.print();" class="btn btn-primary"><i class="icon-save icon-large"></i></a>&nbsp;PRINT</button></div>
 		<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 			<table cellpadding="0" cellspacing="0" border="0" class="table table-bordered" id="example">
-				<caption class="text-center">HOTSPOT USER LIST - <?php echo date('d-m-Y'); ?></caption>
+				<caption class="text-center">LISTA DE USUÁRIOS DO HOTSPOT - <?php echo date('d-m-Y'); ?></caption>
 				<div class="alert alert-info">
-					<h1 class="text-center"><strong>HotSpot User Voucher - 2 in 1 Row(Plain)</strong></h1>
+					<h1 class="text-center"><strong>Voucher do usuário do hotspot - 2 em 1 Row(Plano)</strong></h1>
 				</div>
 				<thead>
 					<tr>
 						<th>#</th>
 						<th></th>
-						<th>Username</th>
-						<th>Password</th>
+						<th>Nome do usuário</th>
+						<th>Senha</th>
 						<th></th>
 						<th>#</th>
 						<th></th>
-						<th>Username</th>
-						<th>Password</th>
+						<th>Nome do usuário</th>
+						<th>Senha</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -184,9 +184,9 @@ if (isset($_POST['voucher2'])) {
 			</table>
 		</div>
 		<div class="col-sm-3 col-sm-offset-5">
-			<button onclick="window.print();" class="btn btn-danger"><i class="icon-save icon-large"></i>PRINT</button>&nbsp;&nbsp;&nbsp;
+			<button onclick="window.print();" class="btn btn-danger"><i class="icon-save icon-large"></i>IMPRESSÃO</button>&nbsp;&nbsp;&nbsp;
 			<button name="submit" type="submit" class="btn btn-success" tabindex="6"><i class="icon-save icon-large"></i>Reset</button>&nbsp;&nbsp;&nbsp;
-			<a href="index.php" class="btn btn-info" tabindex="7"><i class="icon-arrow-left icon-large"></i>Main Menu</a>
+			<a href="index.php" class="btn btn-info" tabindex="7"><i class="icon-arrow-left icon-large"></i>Menu principal</a>
 		</div>						
 	</div>
 	</div>
@@ -210,26 +210,26 @@ if (isset($_POST['voucher3'])) { //3 Units per Line, For Same Username and Passw
 	?>
 	<div class="child-modal">
 	<div class="row">
-		<div class="col-sm-2 col-sm-offset-6"><button onclick="window.print();" class="btn btn-primary"><i class="icon-save icon-large"></i></a>&nbsp;PRINT</button></div>
+		<div class="col-sm-2 col-sm-offset-6"><button onclick="window.print();" class="btn btn-primary"><i class="icon-save icon-large"></i></a>&nbsp;IMPRESSÃO</button></div>
 		<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 			<table cellpadding="0" cellspacing="0" border="0" class="table table-bordered" id="example">
-				<caption class="text-center">HOTSPOT USER LIST - <?php echo date('d-m-Y'); ?></caption>
+				<caption class="text-center">LISTA DE USUÁRIOS DO HOTSPOT - <?php echo date('d-m-Y'); ?></caption>
 				<div class="alert alert-info">
-					<h1 class="text-center"><strong>HotSpot User Voucher - 3 in 1 Row(Plain, For Same Username & Password Accounts)</strong></h1>
+					<h1 class="text-center"><strong>Voucher do usuário do hotspot - 3 em 1 linha(Plano. Para o mesmo Nome-de-usuário & Senha da conta)</strong></h1>
 				</div>
 				<thead>
 					<tr>
 						<th>#</th>
 						<th></th>
-						<th>Details</th>
+						<th>Detalhes</th>
 						<th></th>
 						<th>#</th>
 						<th></th>
-						<th>Details</th>
+						<th>Detalhes</th>
 						<th></th>
 						<th>#</th>
 						<th></th>
-						<th>Details</th>
+						<th>Detalhes</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -292,7 +292,7 @@ else
 	?>
 	<div class="child-modal">
 	<div class="row">
-		<div class="col-sm-2 col-sm-offset-6"><button onclick="window.print();" class="btn btn-primary"><i class="icon-save icon-large"></i></a>&nbsp;PRINT</button></div>
+		<div class="col-sm-2 col-sm-offset-6"><button onclick="window.print();" class="btn btn-primary"><i class="icon-save icon-large"></i></a>&nbsp;IMPRESSÃO</button></div>
 		<div class="col-sm-12 col-md-12 thumbnail" style="box-shadow: 10px 10px 5px #888888;">
 			<table cellpadding="0" cellspacing="0" border="2" class="table table-bordered" id="table-01">
 				<caption class="text-center">HOTSPOT USER LIST - <?php echo date('d-m-Y'); ?></caption>

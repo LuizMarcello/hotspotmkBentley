@@ -869,11 +869,11 @@
 										<tr>
 											<th>#</th>
 											<th>Name</th>
-											<th>Session Timeout</th>                                 
-											<th>Keepalive Timeout</th>
-											<th>Shared Users</th>
-											<th>Rate Limit(Rx/Tx)</th>
-											<th>MAC Cookie Timeout</th>
+											<th>Sessão expirada</th>                                 
+											<th>Tempo de vida expirado</th>
+											<th>Usuarios compartilhados</th>
+											<th>Taxa Limite(Rx/Tx)</th>
+											<th>MAC Cookie expirado</th>
 											<?php if($_SESSION['user_level'] == 1) { //Administrator Only
 												echo '<th>Actions</th>';
 											} ?>	
