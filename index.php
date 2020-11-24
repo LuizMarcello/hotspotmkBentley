@@ -29,7 +29,7 @@ try {
 catch (Exception $e) {
 	echo "Erro acessando os dados: " . $e->getMessage();
 	/* include_once('settings.php'); */
-	include_once('home.php');
+	/* include_once('home.php'); */
 	
 }
 ?>

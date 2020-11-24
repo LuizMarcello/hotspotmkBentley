@@ -47,7 +47,8 @@ use ArrayObject;
  */
 abstract class Message implements IteratorAggregate, Countable
 {
-
+    protected $attributes = array();
+    
     /**
      * An array with message attributes.
      *
@@ -56,7 +57,7 @@ abstract class Message implements IteratorAggregate, Countable
      *
      * @var array<string,string|resource>
      */
-    protected $attributes = array();
+    //aaaqqquuuiii
 
     /**
      * An optional tag to associate the message with.

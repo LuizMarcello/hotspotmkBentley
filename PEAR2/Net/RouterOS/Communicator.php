@@ -19,11 +19,13 @@
 /**
  * The namespace declaration.
  */
+
 namespace PEAR2\Net\RouterOS;
 
 /**
  * Using transmitters.
  */
+
 use PEAR2\Net\Transmitter as T;
 
 /**
@@ -44,6 +46,13 @@ use PEAR2\Net\Transmitter as T;
  */
 class Communicator
 {
+    protected static $defaultCharsets = array(
+        self::CHARSET_REMOTE => null,
+        self::CHARSET_LOCAL  => null
+    );
+
+    protected $charsets = array();
+    
     /**
      * Used when getting/setting all (default) charsets.
      */
@@ -74,10 +83,9 @@ class Communicator
      *
      * @var array<string,string|null>
      */
-    protected static $defaultCharsets = array(
-        self::CHARSET_REMOTE => null,
-        self::CHARSET_LOCAL  => null
-    );
+    //aaaqqquuuiii
+    
+    
 
     /**
      * An array with the current charset.
@@ -86,7 +94,8 @@ class Communicator
      *
      * @var array<string,string|null>
      */
-    protected $charsets = array();
+    //aaaqqquuuiii
+    
 
     /**
      * The transmitter for the connection.
@@ -133,7 +142,8 @@ class Communicator
         if (($context === null) && !$isUnencrypted) {
             $context = stream_context_get_default();
             $opts = stream_context_get_options($context);
-            if (!isset($opts['ssl']['ciphers'])
+            if (
+                !isset($opts['ssl']['ciphers'])
                 || 'DEFAULT' === $opts['ssl']['ciphers']
             ) {
                 stream_context_set_option(
@@ -273,9 +283,9 @@ class Communicator
         $charsetType = self::CHARSET_ALL
     ) {
         if (array_key_exists($charsetType, self::$defaultCharsets)) {
-             $oldCharset = self::$defaultCharsets[$charsetType];
-             self::$defaultCharsets[$charsetType] = $charset;
-             return $oldCharset;
+            $oldCharset = self::$defaultCharsets[$charsetType];
+            self::$defaultCharsets[$charsetType] = $charset;
+            return $oldCharset;
         } else {
             $oldCharsets = self::$defaultCharsets;
             self::$defaultCharsets = is_array($charset) ? $charset : array_fill(
@@ -319,9 +329,9 @@ class Communicator
      */
     public static function seekableStreamLength($stream)
     {
-        $streamPosition = (double) sprintf('%u', ftell($stream));
+        $streamPosition = (float) sprintf('%u', ftell($stream));
         fseek($stream, 0, SEEK_END);
-        $streamLength = ((double) sprintf('%u', ftell($stream)))
+        $streamLength = ((float) sprintf('%u', ftell($stream)))
             - $streamPosition;
         fseek($stream, $streamPosition, SEEK_SET);
         return $streamLength;
@@ -354,9 +364,9 @@ class Communicator
     public function setCharset($charset, $charsetType = self::CHARSET_ALL)
     {
         if (array_key_exists($charsetType, $this->charsets)) {
-             $oldCharset = $this->charsets[$charsetType];
-             $this->charsets[$charsetType] = $charset;
-             return $oldCharset;
+            $oldCharset = $this->charsets[$charsetType];
+            $this->charsets[$charsetType] = $charset;
+            return $oldCharset;
         } else {
             $oldCharsets = $this->charsets;
             $this->charsets = is_array($charset) ? $charset : array_fill(
@@ -412,7 +422,8 @@ class Communicator
      */
     public function sendWord($word)
     {
-        if (null !== ($remoteCharset = $this->getCharset(self::CHARSET_REMOTE))
+        if (
+            null !== ($remoteCharset = $this->getCharset(self::CHARSET_REMOTE))
             && null !== ($localCharset = $this->getCharset(self::CHARSET_LOCAL))
         ) {
             $word = iconv(
@@ -455,7 +466,8 @@ class Communicator
                 InvalidArgumentException::CODE_SEEKABLE_REQUIRED
             );
         }
-        if (null !== ($remoteCharset = $this->getCharset(self::CHARSET_REMOTE))
+        if (
+            null !== ($remoteCharset = $this->getCharset(self::CHARSET_REMOTE))
             && null !== ($localCharset = $this->getCharset(self::CHARSET_LOCAL))
         ) {
             $prefix = iconv(
@@ -571,7 +583,8 @@ class Communicator
             );
         }
 
-        if (null !== ($remoteCharset = $this->getCharset(self::CHARSET_REMOTE))
+        if (
+            null !== ($remoteCharset = $this->getCharset(self::CHARSET_REMOTE))
             && null !== ($localCharset = $this->getCharset(self::CHARSET_LOCAL))
         ) {
             $word = iconv(
@@ -597,12 +610,13 @@ class Communicator
     public function getNextWordAsStream()
     {
         $filters = new T\FilterCollection();
-        if (null !== ($remoteCharset = $this->getCharset(self::CHARSET_REMOTE))
+        if (
+            null !== ($remoteCharset = $this->getCharset(self::CHARSET_REMOTE))
             && null !== ($localCharset = $this->getCharset(self::CHARSET_LOCAL))
         ) {
             $filters->append(
                 'convert.iconv.' .
-                $remoteCharset . '.' . $localCharset . '//IGNORE//TRANSLIT'
+                    $remoteCharset . '.' . $localCharset . '//IGNORE//TRANSLIT'
             );
         }
 
@@ -668,17 +682,17 @@ class Communicator
         $byte = ord($trans->receive(1, 'initial length byte'));
         if ($byte & 0x80) {
             if (($byte & 0xC0) === 0x80) {
-                return (($byte & 077) << 8 ) + ord($trans->receive(1));
+                return (($byte & 077) << 8) + ord($trans->receive(1));
             } elseif (($byte & 0xE0) === 0xC0) {
                 $rem = unpack('n~', $trans->receive(2));
-                return (($byte & 037) << 16 ) + $rem['~'];
+                return (($byte & 037) << 16) + $rem['~'];
             } elseif (($byte & 0xF0) === 0xE0) {
                 $rem = unpack('n~/C~~', $trans->receive(3));
-                return (($byte & 017) << 24 ) + ($rem['~'] << 8) + $rem['~~'];
+                return (($byte & 017) << 24) + ($rem['~'] << 8) + $rem['~~'];
             } elseif (($byte & 0xF8) === 0xF0) {
                 $rem = unpack('N~', $trans->receive(4));
                 return (($byte & 007) * 0x100000000/* '<< 32' or '2^32' */)
-                    + (double) sprintf('%u', $rem['~']);
+                    + (float) sprintf('%u', $rem['~']);
             }
             throw new NotSupportedException(
                 'Unknown control byte encountered.',
